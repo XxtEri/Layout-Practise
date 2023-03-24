@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		F356E92E29CC9C5E00D90D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E92D29CC9C5E00D90D5C /* AppDelegate.swift */; };
 		F356E93029CC9C5E00D90D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E92F29CC9C5E00D90D5C /* SceneDelegate.swift */; };
-		F356E93229CC9C5E00D90D5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E93129CC9C5E00D90D5C /* ViewController.swift */; };
+		F356E93229CC9C5E00D90D5C /* ViewControllerFirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E93129CC9C5E00D90D5C /* ViewControllerFirstScreen.swift */; };
 		F356E93529CC9C5E00D90D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F356E93329CC9C5E00D90D5C /* Main.storyboard */; };
 		F356E93729CC9C6300D90D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F356E93629CC9C6300D90D5C /* Assets.xcassets */; };
 		F356E93A29CC9C6300D90D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F356E93829CC9C6300D90D5C /* LaunchScreen.storyboard */; };
+		F356E94229CCABE800D90D5C /* ViewControllerSecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E94129CCABE800D90D5C /* ViewControllerSecondScreen.swift */; };
+		F356E94829CCAE6100D90D5C /* HelveticaNeueCyr-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94729CCAE6100D90D5C /* HelveticaNeueCyr-Light.ttf */; };
+		F356E94A29CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94929CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf */; };
+		F356E94C29CCAF4800D90D5C /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94B29CCAF4800D90D5C /* Rubik-Medium.ttf */; };
+		F356E94E29CCAF5500D90D5C /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94D29CCAF5500D90D5C /* Rubik-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F356E92A29CC9C5E00D90D5C /* Layout-Practise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Layout-Practise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F356E92D29CC9C5E00D90D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F356E92F29CC9C5E00D90D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F356E93129CC9C5E00D90D5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F356E93129CC9C5E00D90D5C /* ViewControllerFirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFirstScreen.swift; sourceTree = "<group>"; };
 		F356E93429CC9C5E00D90D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F356E93629CC9C6300D90D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F356E93929CC9C6300D90D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F356E93B29CC9C6300D90D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F356E94129CCABE800D90D5C /* ViewControllerSecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecondScreen.swift; sourceTree = "<group>"; };
+		F356E94729CCAE6100D90D5C /* HelveticaNeueCyr-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-Light.ttf"; sourceTree = "<group>"; };
+		F356E94929CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-Bold.ttf"; sourceTree = "<group>"; };
+		F356E94B29CCAF4800D90D5C /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		F356E94D29CCAF5500D90D5C /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		F356E92C29CC9C5E00D90D5C /* Layout-Practise */ = {
 			isa = PBXGroup;
 			children = (
+				F356E93829CC9C6300D90D5C /* LaunchScreen.storyboard */,
 				F356E92D29CC9C5E00D90D5C /* AppDelegate.swift */,
 				F356E92F29CC9C5E00D90D5C /* SceneDelegate.swift */,
-				F356E93129CC9C5E00D90D5C /* ViewController.swift */,
-				F356E93329CC9C5E00D90D5C /* Main.storyboard */,
+				F356E94329CCAD1800D90D5C /* Screens */,
+				F356E94629CCAD7900D90D5C /* Fonts */,
 				F356E93629CC9C6300D90D5C /* Assets.xcassets */,
-				F356E93829CC9C6300D90D5C /* LaunchScreen.storyboard */,
 				F356E93B29CC9C6300D90D5C /* Info.plist */,
 			);
 			path = "Layout-Practise";
+			sourceTree = "<group>";
+		};
+		F356E94329CCAD1800D90D5C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F356E93329CC9C5E00D90D5C /* Main.storyboard */,
+				F356E94429CCAD2600D90D5C /* FirstScreen */,
+				F356E94529CCAD2D00D90D5C /* SecondScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F356E94429CCAD2600D90D5C /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F356E93129CC9C5E00D90D5C /* ViewControllerFirstScreen.swift */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		F356E94529CCAD2D00D90D5C /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F356E94129CCABE800D90D5C /* ViewControllerSecondScreen.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		F356E94629CCAD7900D90D5C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F356E94D29CCAF5500D90D5C /* Rubik-Regular.ttf */,
+				F356E94B29CCAF4800D90D5C /* Rubik-Medium.ttf */,
+				F356E94929CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf */,
+				F356E94729CCAE6100D90D5C /* HelveticaNeueCyr-Light.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F356E93A29CC9C6300D90D5C /* LaunchScreen.storyboard in Resources */,
+				F356E94E29CCAF5500D90D5C /* Rubik-Regular.ttf in Resources */,
 				F356E93729CC9C6300D90D5C /* Assets.xcassets in Resources */,
 				F356E93529CC9C5E00D90D5C /* Main.storyboard in Resources */,
+				F356E94C29CCAF4800D90D5C /* Rubik-Medium.ttf in Resources */,
+				F356E94829CCAE6100D90D5C /* HelveticaNeueCyr-Light.ttf in Resources */,
+				F356E94A29CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F356E93229CC9C5E00D90D5C /* ViewController.swift in Sources */,
+				F356E94229CCABE800D90D5C /* ViewControllerSecondScreen.swift in Sources */,
+				F356E93229CC9C5E00D90D5C /* ViewControllerFirstScreen.swift in Sources */,
 				F356E92E29CC9C5E00D90D5C /* AppDelegate.swift in Sources */,
 				F356E93029CC9C5E00D90D5C /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +354,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "tsu.Layout-Practise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +385,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "tsu.Layout-Practise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

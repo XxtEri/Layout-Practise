@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewControllerFirstScreen.swift
 //  Layout-Practise
 //
 //  Created by Елена on 23.03.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerFirstScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
