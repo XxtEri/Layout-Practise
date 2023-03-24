@@ -46,16 +46,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-pW-TFT">
                                 <rect key="frame" x="16" y="476" width="361" height="223"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-uF-Qvy">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-uF-Qvy">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="26.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="E-mail" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CfU-f2-l1f">
                                         <rect key="frame" x="0.0" y="42.333333333333371" width="361" height="26.333333333333329"/>
@@ -128,6 +122,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uj3-7E-WIr" secondAttribute="trailing" constant="2" id="xxy-R6-YJw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailInput" destination="CfU-f2-l1f" id="oPd-pc-eMZ"/>
+                        <outlet property="nameInput" destination="nj7-uF-Qvy" id="cnK-8M-d5t"/>
+                        <outlet property="passwordInput" destination="Xo8-FQ-maN" id="4gA-Tz-mKM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
