@@ -44,37 +44,97 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-pW-TFT">
-                                <rect key="frame" x="16" y="476" width="361" height="223"/>
+                                <rect key="frame" x="16" y="476" width="361" height="297.66666666666674"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-uF-Qvy">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="26.333333333333332"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="E-mail" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CfU-f2-l1f">
-                                        <rect key="frame" x="0.0" y="42.333333333333371" width="361" height="26.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIw-mW-TJf">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="50.333333333333336"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-uF-Qvy">
+                                                <rect key="frame" x="16" y="15.999999999999998" width="329" height="18.333333333333321"/>
+                                                <color key="textColor" name="CustomGrayColor"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="nj7-uF-Qvy" secondAttribute="trailing" constant="16" id="Q4s-OQ-nHR"/>
+                                            <constraint firstAttribute="bottom" secondItem="nj7-uF-Qvy" secondAttribute="bottom" constant="16" id="QEj-JS-K9l"/>
+                                            <constraint firstItem="nj7-uF-Qvy" firstAttribute="leading" secondItem="bIw-mW-TJf" secondAttribute="leading" constant="16" id="fqj-AV-LR9"/>
+                                            <constraint firstItem="nj7-uF-Qvy" firstAttribute="top" secondItem="bIw-mW-TJf" secondAttribute="top" constant="16" id="m5Y-4n-Rnw"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="CustomGrayColor"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Xo8-FQ-maN">
-                                        <rect key="frame" x="0.0" y="84.666666666666629" width="361" height="26.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-OR-3Wl">
+                                        <rect key="frame" x="0.0" y="66.333333333333371" width="361" height="50.333333333333343"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="PvC-nJ-FgF">
+                                                <rect key="frame" x="16" y="15.999999999999998" width="329" height="18.333333333333321"/>
+                                                <color key="textColor" name="CustomGrayColor"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PvC-nJ-FgF" firstAttribute="top" secondItem="MgZ-OR-3Wl" secondAttribute="top" constant="16" id="46c-9R-7A5"/>
+                                            <constraint firstAttribute="trailing" secondItem="PvC-nJ-FgF" secondAttribute="trailing" constant="16" id="Ulv-19-Hum"/>
+                                            <constraint firstAttribute="bottom" secondItem="PvC-nJ-FgF" secondAttribute="bottom" constant="16" id="cCW-8c-ex9"/>
+                                            <constraint firstItem="PvC-nJ-FgF" firstAttribute="leading" secondItem="MgZ-OR-3Wl" secondAttribute="leading" constant="16" id="u9k-8c-Vun"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="CustomGrayColor"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </textField>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rin-a2-Hv9">
+                                        <rect key="frame" x="0.0" y="132.66666666666663" width="361" height="53"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jwE-Y0-gfe">
+                                                <rect key="frame" x="16" y="16" width="295" height="21"/>
+                                                <color key="textColor" name="CustomGrayColor"/>
+                                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Password Icons" translatesAutoresizingMaskIntoConstraints="NO" id="Pv7-R3-vFc">
+                                                <rect key="frame" x="321" y="14.000000000000002" width="24" height="24.666666666666671"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Pv7-R3-vFc" firstAttribute="top" secondItem="Rin-a2-Hv9" secondAttribute="top" constant="14" id="0bY-jZ-XO0"/>
+                                            <constraint firstAttribute="bottom" secondItem="jwE-Y0-gfe" secondAttribute="bottom" constant="16" id="49R-DA-ekp"/>
+                                            <constraint firstItem="Pv7-R3-vFc" firstAttribute="leading" secondItem="jwE-Y0-gfe" secondAttribute="trailing" constant="10" id="V98-JA-Xe9"/>
+                                            <constraint firstItem="jwE-Y0-gfe" firstAttribute="leading" secondItem="Rin-a2-Hv9" secondAttribute="leading" constant="16" id="Wjs-2W-5aA"/>
+                                            <constraint firstAttribute="bottom" secondItem="Pv7-R3-vFc" secondAttribute="bottom" constant="14.5" id="cT8-0p-hwf"/>
+                                            <constraint firstItem="jwE-Y0-gfe" firstAttribute="top" secondItem="Rin-a2-Hv9" secondAttribute="top" constant="16" id="jLO-RF-ZuC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pv7-R3-vFc" secondAttribute="trailing" constant="16" id="sC3-Mm-Ygm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="CustomGrayColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dus-Da-bWI">
-                                        <rect key="frame" x="0.0" y="127" width="361" height="51"/>
+                                        <rect key="frame" x="0.0" y="201.66666666666663" width="361" height="51"/>
                                         <color key="backgroundColor" name="CustomOrangeColor"/>
                                         <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
                                         <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
@@ -93,11 +153,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-Sn-S42">
-                                        <rect key="frame" x="0.0" y="194" width="361" height="29"/>
+                                        <rect key="frame" x="0.0" y="268.66666666666663" width="361" height="29"/>
                                         <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log in">
-                                            <color key="titleColor" name="CustomGrayColor"/>
+                                            <color key="titleColor" name="CustomBrawnColor"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -123,14 +183,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailInput" destination="CfU-f2-l1f" id="oPd-pc-eMZ"/>
                         <outlet property="nameInput" destination="nj7-uF-Qvy" id="cnK-8M-d5t"/>
-                        <outlet property="passwordInput" destination="Xo8-FQ-maN" id="4gA-Tz-mKM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
         <!--View Controller Second Screen-->
         <scene sceneID="y1C-gt-H2X">
@@ -152,8 +210,12 @@
     <resources>
         <image name="Cool Kids Standing" width="343" height="253"/>
         <image name="IconArrow" width="48" height="48"/>
-        <namedColor name="CustomGrayColor">
+        <image name="Password Icons" width="24" height="24"/>
+        <namedColor name="CustomBrawnColor">
             <color red="0.47058823529411764" green="0.45490196078431372" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGrayColor">
+            <color red="0.74509803921568629" green="0.72941176470588232" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CustomOrangeColor">
             <color red="0.8901960784313725" green="0.33725490196078434" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

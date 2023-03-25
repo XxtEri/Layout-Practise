@@ -7,6 +7,13 @@
 
 import UIKit
 
+extension UIView {
+    @IBInspectable var borderColor: UIColor? {
+        get { return UIColor(cgColor: layer.borderColor!) }
+        set { layer.borderColor = newValue?.cgColor }
+    }
+}
+
 class ViewControllerFirstScreen: UIViewController {
 
     @IBOutlet weak var passwordInput: UITextField!
@@ -16,25 +23,5 @@ class ViewControllerFirstScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.nameInput.addPaddingToTextField()
-        self.emailInput.addPaddingToTextField()
-        self.passwordInput.addPaddingToTextField()
-        
-        self.nameInput.addCornerRadius()
-    }
-}
-
-extension UITextField {
-    func addPaddingToTextField() {
-        let paddingView: UIView = UIView.init(frame: CGRect(x: 0, y: 0, width: 16, height: 0))
-        
-        self.leftView = paddingView
-        self.leftViewMode = .always
-        self.rightView = paddingView
-        self.rightViewMode = .always
-    }
-    
-    func addCornerRadius() {
-        self.layer.cornerRadius = 12
     }
 }
