@@ -22,7 +22,7 @@ protocol IViewControllerFirstScreen: AnyObject {
 
 class ViewControllerFirstScreen: UIViewController {
     
-    private var presenter: PresenterFirstScreen
+    private var presenter: PresenterFirstScreen?
 
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var emailInput: UITextField!
@@ -33,23 +33,17 @@ class ViewControllerFirstScreen: UIViewController {
         guard let email = emailInput.text else { return }
         guard let password = passwordInput.text else { return }
         
-        presenter.checkInputField(name: name, email: email, password: password)
-    }
-    
-    init() {
-        self.presenter = PresenterFirstScreen(viewController: ViewControllerFirstScreen())
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        self.presenter = PresenterFirstScreen(viewController: nil)
-        
-        super.init(coder: coder)
+        presenter?.checkInputField(name: name, email: email, password: password)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configurePresenter()
+    }
+    
+    private func configurePresenter() {
+        presenter = PresenterFirstScreen(with: self)
     }
 }
 

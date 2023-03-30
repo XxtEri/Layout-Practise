@@ -12,7 +12,7 @@ class PresenterFirstScreen {
     private var validationErrorFoundHandler: (() -> Void)?
     private var SignInHandler: (() -> Void)?
     
-    init(viewController: IViewControllerFirstScreen?) {
+    init(with viewController: IViewControllerFirstScreen) {
         self.viewController = viewController
         self.validation = Validation()
         
@@ -20,7 +20,8 @@ class PresenterFirstScreen {
     }
     
     func checkInputField(name: String, email: String, password: String) {
-        if !validation.checkEmail(email) ||  !validation.checkPassword(password) ||
+        if !validation.checkEmail(email) ||
+            !validation.checkPassword(password) ||
             !validation.checkName(name) {
             
             self.validationErrorFoundHandler?()
