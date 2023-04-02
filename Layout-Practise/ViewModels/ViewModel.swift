@@ -9,7 +9,7 @@ import Foundation
 
 class ViewModel {
     private var validation = Validation()
-    var statusText = Dynamic("")
+    var statusText = Observable("")
     
     private func checkValidData(name: String, email: String, password: String) {
         if !validation.checkName(name) ||
