@@ -22,7 +22,9 @@ protocol IViewControllerFirstScreen: AnyObject {
 
 class ViewControllerFirstScreen: UIViewController {
     
-    private var presenter: PresenterFirstScreen?
+    private var viewModel: ViewModel?
+    
+    private var authResult = String()
 
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var emailInput: UITextField!
@@ -33,17 +35,24 @@ class ViewControllerFirstScreen: UIViewController {
         guard let email = emailInput.text else { return }
         guard let password = passwordInput.text else { return }
         
-        presenter?.checkInputField(name: name, email: email, password: password)
+        viewModel?.userButtonPressed(name: name, email: email, password: password)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configurePresenter()
+        bindViewModel()
     }
     
-    private func configurePresenter() {
-        presenter = PresenterFirstScreen(with: self)
+    private func bindViewModel() {
+        viewModel = ViewModel()
+        
+        viewModel?.statusText.bind(listener: { statusText in
+            DispatchQueue.main.async {
+                self.authResult = statusText
+                print(self.authResult)
+            }
+        })
     }
 }
 

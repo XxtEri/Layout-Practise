@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33CA45629D995400084D256 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CA45529D995400084D256 /* User.swift */; };
+		F33CA45829D9976B0084D256 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CA45729D9976B0084D256 /* ViewModel.swift */; };
+		F33CA45B29D997820084D256 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CA45A29D997820084D256 /* Dynamic.swift */; };
 		F356E92E29CC9C5E00D90D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E92D29CC9C5E00D90D5C /* AppDelegate.swift */; };
 		F356E93029CC9C5E00D90D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E92F29CC9C5E00D90D5C /* SceneDelegate.swift */; };
 		F356E93229CC9C5E00D90D5C /* ViewControllerFirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356E93129CC9C5E00D90D5C /* ViewControllerFirstScreen.swift */; };
@@ -18,11 +21,13 @@
 		F356E94A29CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94929CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf */; };
 		F356E94C29CCAF4800D90D5C /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94B29CCAF4800D90D5C /* Rubik-Medium.ttf */; };
 		F356E94E29CCAF5500D90D5C /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F356E94D29CCAF5500D90D5C /* Rubik-Regular.ttf */; };
-		F38358DD29D430A4005AECE1 /* PresenterFirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38358DC29D430A4005AECE1 /* PresenterFirstScreen.swift */; };
 		F38358DF29D43141005AECE1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38358DE29D43141005AECE1 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F33CA45529D995400084D256 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F33CA45729D9976B0084D256 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F33CA45A29D997820084D256 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		F356E92A29CC9C5E00D90D5C /* Layout-Practise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Layout-Practise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F356E92D29CC9C5E00D90D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F356E92F29CC9C5E00D90D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		F356E94929CCAE9A00D90D5C /* HelveticaNeueCyr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-Bold.ttf"; sourceTree = "<group>"; };
 		F356E94B29CCAF4800D90D5C /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		F356E94D29CCAF5500D90D5C /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
-		F38358DC29D430A4005AECE1 /* PresenterFirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterFirstScreen.swift; sourceTree = "<group>"; };
 		F38358DE29D43141005AECE1 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +55,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F33CA45329D994DC0084D256 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F33CA45929D997700084D256 /* Bindins */,
+				F33CA45729D9976B0084D256 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F33CA45429D995200084D256 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F356E93829CC9C6300D90D5C /* LaunchScreen.storyboard */,
+				F356E93329CC9C5E00D90D5C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F33CA45929D997700084D256 /* Bindins */ = {
+			isa = PBXGroup;
+			children = (
+				F33CA45A29D997820084D256 /* Dynamic.swift */,
+			);
+			path = Bindins;
+			sourceTree = "<group>";
+		};
 		F356E92129CC9C5E00D90D5C = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +103,7 @@
 				F356E92D29CC9C5E00D90D5C /* AppDelegate.swift */,
 				F356E92F29CC9C5E00D90D5C /* SceneDelegate.swift */,
 				F38358DB29D4273D005AECE1 /* Models */,
-				F38358DA29D42737005AECE1 /* Presenters */,
+				F33CA45329D994DC0084D256 /* ViewModels */,
 				F38358D929D42731005AECE1 /* Views */,
 				F356E94629CCAD7900D90D5C /* Fonts */,
 				F356E93629CC9C6300D90D5C /* Assets.xcassets */,
@@ -96,26 +126,18 @@
 		F38358D929D42731005AECE1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F356E93829CC9C6300D90D5C /* LaunchScreen.storyboard */,
-				F356E93329CC9C5E00D90D5C /* Main.storyboard */,
+				F33CA45429D995200084D256 /* Storyboards */,
 				F356E93129CC9C5E00D90D5C /* ViewControllerFirstScreen.swift */,
 				F356E94129CCABE800D90D5C /* ViewControllerSecondScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F38358DA29D42737005AECE1 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				F38358DC29D430A4005AECE1 /* PresenterFirstScreen.swift */,
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
 		F38358DB29D4273D005AECE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F38358DE29D43141005AECE1 /* Validation.swift */,
+				F33CA45529D995400084D256 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,9 +220,11 @@
 				F356E94229CCABE800D90D5C /* ViewControllerSecondScreen.swift in Sources */,
 				F356E93229CC9C5E00D90D5C /* ViewControllerFirstScreen.swift in Sources */,
 				F356E92E29CC9C5E00D90D5C /* AppDelegate.swift in Sources */,
+				F33CA45B29D997820084D256 /* Dynamic.swift in Sources */,
 				F356E93029CC9C5E00D90D5C /* SceneDelegate.swift in Sources */,
 				F38358DF29D43141005AECE1 /* Validation.swift in Sources */,
-				F38358DD29D430A4005AECE1 /* PresenterFirstScreen.swift in Sources */,
+				F33CA45829D9976B0084D256 /* ViewModel.swift in Sources */,
+				F33CA45629D995400084D256 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
